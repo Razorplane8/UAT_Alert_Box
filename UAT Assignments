@@ -1,0 +1,123 @@
+<!DOCTYPE html Duane P. Bogan>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Function!</title>
+    <script type="text/javascript"></script>
+
+</head>
+<body>
+ 
+<h1 style="text-align:center; background-color: white; color:blue;" >UAT Clock Function</h1>
+<img src="UAT_Shield_Logo.png" alt="UAT Logo" width="200px">
+<img src="Clock.jpg" alt="A clock picture." width="300px"> 
+
+<p id="demo"></p>
+<script>
+     
+    document.getElementById("demo").innerHTML = text;
+</script>
+    
+<script>
+
+setInterval(myTimer, 5000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo1").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+<button style="background-color:green;size:25px;color:white;block-size: 50px;" 
+    onclick="document.getElementById('demo1').innerHTML = Date()">
+    Click for Date and Time.</button>
+    
+    <p id="demo1"></p>
+
+    <style>
+        body {
+    background:
+    linear-gradient(to  
+    bottom, rgb(52, 209, 49), white, #09046a, white); 
+        }
+        
+    </style> 
+
+</body>
+</html>
+
+
+
+_________________________________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>  
+    let i = 0;
+
+    while (i<11) {  
+      loop(i);
+      i++
+    }
+    
+    function loop(i){
+      setTimeout(function(){
+        document.write(i); //console.log(i);
+      }, 3000 * i)
+    }
+  </script>  
+</body>
+</html>
+
+____________________________________________________________________________________________________
+
+<!DOCTYPE html Duane P. Bogan>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Alert Box</title>
+    <script type="text/javascript"></script>
+
+</head>
+<body>
+    <h1 style="color: yellow;" >JavaScript Alert</h1>
+
+    <button style="background-color: lightgreen;color:darkgreen;block-size: 50px;"
+     onclick="myFunction()">Press?</button>
+    
+    <script>
+    function myFunction() {
+      alert ('Hello UAT');
+    }
+    </script>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+    <img src="Fire Truck.jpg" alt="Fire Truck picture" width="400">
+    
+    <style>
+        body {
+        background:
+        linear-gradient(to  
+        bottom, red, white, blue);
+        }
+
+    </style>
+
+</body>
+</html>
